@@ -1,8 +1,8 @@
-This is a refactor exercise and his goal is to overall improve the proposed app. It shows a list of players with data about their team and their league score and we want you to propose solutions and implement them in order to improve the architecture, testability and UX. It's intentionally crappy so you can shine bright :) 
+This is a refactor exercise and his goal is to overall improve the proposed app. It shows a list of players with data about their team and their league score and we want you to propose solutions and implement them in order to improve the architecture, testability and UX. It's intentionally crappy so you can shine bright :)
 
 ## Requirements
 
-There are some mandatory constraints you have to attend: 
+There are some mandatory constraints you have to attend:
 
 - Update the management of the state using REDUX and use a library for the management of the requests (like redux thunk or sagas)
 - Use our component library Ola to build the interface [https://github.com/marketgoo/Ola](https://github.com/marketgoo/Ola)
@@ -20,7 +20,29 @@ There are some mandatory constraints you have to attend:
 ## Install
 
 - Donwload repository
-- npm i ( node v12 required )
+- ~~npm i ( node v12 required )~~
+
+- `curl https://get.volta.sh | bash`
+
+    > Install Volta from https://volta.sh/ <br />
+    > Don't worry about the required node version in this project. Volta select the required version automatically.
+
+    > **Advantage:** Every developer will uses the same required version of node in this project without changes.
+    > In others proyects Volta will use other versions of node if it is required.
+    >
+    > Previously... we had forced the node version in the project with:
+    >
+    > ```bash
+    > $ volta pin node@12
+    > success: pinned node@12.22.12 (with npm@6.14.16) in package.json
+    > ```
+
+- `npm ci`
+
+    > Use `npm ci` not `npm i` when its possible.
+    >
+    > **Advantage:** New minor updates may break the app :-/ Use `ci` instead of `i`. All updates should be controlled & revised by the team.
+    > New minor updates may break the app! :-/
 
 ## Run app locally
 
