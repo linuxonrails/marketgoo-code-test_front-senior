@@ -1,6 +1,5 @@
-import { render, screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
-import '@testing-library/jest-dom';
+import React from 'react';
+import { render } from '@testing-library/react';
 import List from './List';
 
 describe('List', () => {
@@ -8,6 +7,5 @@ describe('List', () => {
         // Arranage
         render(<List />);
         // Act
-        await userEvent
     });
 });
