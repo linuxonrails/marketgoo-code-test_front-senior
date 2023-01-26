@@ -73,3 +73,15 @@ npm init @eslint/config
 ```
 
 Some extra configs needed (jsx support). More info: https://eslint.org/docs/latest/use/configure/
+
+## Install Prettier
+
+https://prettier.io/docs/en/install.html
+
+```bash
+npm install --save-dev --save-exact prettier
+# Create an empty config file
+echo {}> .prettierrc.json
+```
+
+There are other options. I use prettier (for now) because it's simple and (almost) standard. But I could use any other code formatter.
