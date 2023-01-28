@@ -80,17 +80,29 @@ class List extends React.Component {
                 <br />
                 <form onSubmit={this.handleSubmit}>
                     <h4>Add new players</h4>
+                    <label htmlFor="name" style={{ display: "none" }}>
+                        Player name
+                    </label>
                     <input
+                        id="name"
                         name="name"
                         placeholder="player name"
                         onChange={this.handleChange}
                     ></input>
+                    <label htmlFor="team" style={{ display: "none" }}>
+                        Team name
+                    </label>
                     <input
+                        id="team"
                         name="team"
                         placeholder="team name"
                         onChange={this.handleChange}
                     ></input>
+                    <label htmlFor="score" style={{ display: "none" }}>
+                        Team score
+                    </label>
                     <input
+                        id="score"
                         name="score"
                         placeholder="team score"
                         onChange={this.handleChange}

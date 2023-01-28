@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List should match the same snapshot 1`] = `
+<DocumentFragment>
+  <table>
+    <thead>
+      <tr>
+        <td>
+          Player
+        </td>
+        <td>
+          Team
+        </td>
+        <td>
+          Score
+        </td>
+        <td>
+          Actions
+        </td>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+  <br />
+  <form>
+    <h4>
+      Add new players
+    </h4>
+    <label
+      for="name"
+      style="display: none;"
+    >
+      Player name
+    </label>
+    <input
+      id="name"
+      name="name"
+      placeholder="player name"
+    />
+    <label
+      for="team"
+      style="display: none;"
+    >
+      Team name
+    </label>
+    <input
+      id="team"
+      name="team"
+      placeholder="team name"
+    />
+    <label
+      for="score"
+      style="display: none;"
+    >
+      Team score
+    </label>
+    <input
+      id="score"
+      name="score"
+      placeholder="team score"
+    />
+    <button>
+      Add
+    </button>
+  </form>
+</DocumentFragment>
+`;

@@ -7,7 +7,7 @@
 -   Meet the requirements (Redux + Saga + Ola DS) (mandatory!)
 -   Fix security issues (mandatory!)
 -   Increase robustness (with testing, clean code, apply programming patterns, etc.)
--   Improve the user experience (UX, performance, etc.)
+-   UX: Improve the user experience (accessibility, performance, etc.)
 -   Document as much as possible
 -   Add new functionalities not proposed (filters, sorting, etc.) (optional)
 
