@@ -8,6 +8,7 @@
         "build": "webpack -p",
         "build:dev": "webpack -d --watch",
         "test": "jest",
+        "cypress:run": "cypress run",
         "cypress:open": "cypress open"
     },
     "author": "",

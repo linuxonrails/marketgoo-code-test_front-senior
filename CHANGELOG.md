@@ -144,6 +144,18 @@ jobs:
                   start: npm start
 ```
 
+To execute cypress locally (open the cypress UI):
+
+```bash
+npm run cypress:open
+```
+
+Cypress for CI (headless mode):
+
+```bash
+npm run cypress:run
+```
+
 ## Install ESLint
 
 ```
