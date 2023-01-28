@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import axios from "axios";
 
 class List extends React.Component {
@@ -60,7 +60,7 @@ class List extends React.Component {
                     <tbody>
                         {players &&
                             players.data.map((x) => (
-                                <tr>
+                                <tr key={x.id}>
                                     <td>{x.name}</td>
                                     <td>{x.team}</td>
                                     <td>{x.score}</td>

@@ -104,6 +104,16 @@ Other dependencies:
 npm i -D @testing-library/jest-dom
 ```
 
+## Instal nock (mocking HTTP requests)
+
+https://www.npmjs.com/package/nock
+
+We can directly mock axios with Jest but we make our test and our code will be even more dependent on Axios. In the future we might want to switch from Axios to other request library.
+
+```bash
+npm i -D nock
+```
+
 ## Install ESLint
 
 ```
