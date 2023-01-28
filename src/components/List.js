@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import { Button } from "@marketgoo/ola";
 
 class List extends React.Component {
     constructor(props) {
@@ -107,7 +108,7 @@ class List extends React.Component {
                         placeholder="team score"
                         onChange={this.handleChange}
                     ></input>
-                    <button>Add</button>
+                    <Button variant="primary">Add</Button>
                 </form>
             </>
         );

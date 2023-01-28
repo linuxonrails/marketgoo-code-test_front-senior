@@ -7,7 +7,7 @@
 -   Meet the requirements (Redux + Saga + Ola DS) (mandatory!)
 -   Fix security issues (mandatory!)
 -   Increase robustness (with testing, clean code, apply programming patterns, etc.)
--   UX: Improve the user experience (accessibility, performance, etc.)
+-   UX: Improve the user experience (accessibility, performance, i18n, etc.)
 -   Document as much as possible
 -   Add new functionalities not proposed (filters, sorting, etc.) (optional)
 
@@ -27,8 +27,9 @@
 -   [x] Add Jest
 -   [x] Add React Testing Library
 -   [x] Unit Tests
--   [ ] Add Cypress.io (e2e tests)
--   [ ] Add e2e tests
+-   [x] Add Cypress.io (e2e tests)
+-   [x] Add e2e tests
+-   [x] Add react-i18next (i18n)
 -   [ ] Refact: Big component to small components
 -   [ ] Refact: From Class-Components to Function-Components
 -   [ ] Refact: Presentation pattern & Render pattern
@@ -175,3 +176,9 @@ echo {}> .prettierrc.json
 ```
 
 There are other options. I use prettier (for now) because it's simple and (almost) standard. But I could use any other code formatter.
+
+## Install Ola DS
+
+```bash
+npm i @marketgoo/ola
+```

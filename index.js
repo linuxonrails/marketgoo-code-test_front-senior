@@ -63,7 +63,7 @@ app.get("/players", (req, res) => {
     setTimeout(() => {
         Player.findAll({ order: [["score", "DESC"]], raw: true })
             .then((players) => res.json({ status: "ok", data: players }))
-            .catch((err) => res.json({ status: "ko" }));
+            .catch(() => res.json({ status: "ko" }));
     }, 2000);
 });
 

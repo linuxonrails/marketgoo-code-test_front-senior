@@ -61,8 +61,14 @@ exports[`List should match the same snapshot 1`] = `
       name="score"
       placeholder="team score"
     />
-    <button>
-      Add
+    <button
+      class="ola_button is-primary"
+    >
+      <span
+        class="ola_button-text"
+      >
+        Add
+      </span>
     </button>
   </form>
 </DocumentFragment>

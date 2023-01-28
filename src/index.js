@@ -2,7 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import socketIOClient from "socket.io-client";
 const ENDPOINT = "http://localhost:3000";
-import "./index.css";
+// import "./index.css";
+import "../node_modules/@marketgoo/ola/dist/index.css";
 
 import List from "./components/List";
 
