@@ -25,8 +25,8 @@
 -   [x] Add prettier
 -   [ ] Add Responsive
 -   [x] Add Jest
--   [ ] Add React Testing Library
--   [ ] Unit Tests
+-   [x] Add React Testing Library
+-   [x] Unit Tests
 -   [ ] Add Cypress.io (e2e tests)
 -   [ ] Add e2e tests
 -   [ ] Refact: Big component to small components
@@ -35,6 +35,7 @@
 -   [ ] Refact: Add react-query (query caching)
 -   [ ] Add throttling to the API calls (less requests to the server)
 -   [ ] Update React, Webpack, Node & other libraries
+-   [ ] Create a docker image to run the app
 
 ## Pin node version with Volta
 
@@ -112,6 +113,35 @@ We can directly mock axios with Jest but we make our test and our code will be e
 
 ```bash
 npm i -D nock
+```
+
+## Install [Cypress.io](https://www.cypress.io/) (e2e tests)
+
+```bash
+npm install cypress --save-dev
+```
+
+Create `.github/workflows/test.yml` to run the tests in the CI (github).
+
+Install [Cypress ESLint plugin](https://github.com/cypress-io/eslint-plugin-cypress) because Cypress uses global variables and we need to tell ESLint to ignore them:
+
+```bash
+npm install eslint-plugin-cypress --save-dev
+```
+
+```yaml
+on: [push]
+jobs:
+    cypress:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+            - name: Cypress run
+              uses: cypress-io/github-action@v5
+              with:
+                  build: npm run build
+                  start: npm start
 ```
 
 ## Install ESLint

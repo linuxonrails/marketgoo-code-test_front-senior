@@ -7,10 +7,10 @@
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "plugin:cypress/recommended"
     ],
-    "overrides": [
-    ],
+    "overrides": [],
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -19,9 +19,6 @@
         "jsx": true,
         "sourceType": "module"
     },
-    "plugins": [
-        "react"
-    ],
-    "rules": {
-    }
+    "plugins": ["react", "cypress"],
+    "rules": {}
 }
