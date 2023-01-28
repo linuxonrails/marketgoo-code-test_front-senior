@@ -19,7 +19,9 @@ exports[`List should match the same snapshot 1`] = `
         </td>
       </tr>
     </thead>
-    <tbody />
+    <tbody
+      data-testid="players"
+    />
   </table>
   <br />
   <form>
