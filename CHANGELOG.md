@@ -98,6 +98,12 @@ Last versions of React Testing Library doesn't support React 16.x.
 We are forced to use an old version (currently).
 More info: https://stackoverflow.com/questions/71713405/cannot-find-module-react-dom-client-from-node-modules-testing-library-react#comment127543807_71716438
 
+Other dependencies:
+
+```bash
+npm i -D @testing-library/jest-dom
+```
+
 ## Install ESLint
 
 ```
