@@ -57,10 +57,10 @@ class List extends React.Component {
                             <td>Actions</td>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody data-testid="players">
                         {players &&
                             players.data.map((x) => (
-                                <tr key={x.id}>
+                                <tr key={x.id} data-testid="player">
                                     <td>{x.name}</td>
                                     <td>{x.team}</td>
                                     <td>{x.score}</td>
