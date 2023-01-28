@@ -1,12 +1,48 @@
-Changes:
+# Changelog
+
+# Goals sort by priority
+
+(+ priority)
+
+-   Meet the requirements (Redux + Saga + Ola DS) (mandatory!)
+-   Fix security issues (mandatory!)
+-   Increase robustness (with testing, clean code, apply programming patterns, etc.)
+-   Improve the user experience (UX, performance, etc.)
+-   Document as much as possible
+-   Add new functionalities not proposed (filters, sorting, etc.) (optional)
+
+(- priority)
+
+## Summary
+
+-   [x] Pine Node version with Volta
+-   [ ] Add TypeDoc to document code
+-   [ ] Redux + sagas
+-   [ ] Use Ola DS
+-   [x] Eslint
+-   [ ] Migration to TypeScript
+-   [ ] Add typings
+-   [x] Add prettier
+-   [ ] Add Responsive
+-   [x] Add Jest
+-   [ ] Add React Testing Library
+-   [ ] Unit Tests
+-   [ ] Add Cypress.io (e2e tests)
+-   [ ] Add e2e tests
+-   [ ] Refact: Big component to small components
+-   [ ] Refact: From Class-Components to Function-Components
+-   [ ] Refact: Presentation pattern & Render pattern
+-   [ ] Refact: Add react-query (query caching)
+-   [ ] Add throttling to the API calls (less requests to the server)
+-   [ ] Update React, Webpack, Node & other libraries
 
 ## Pin node version with Volta
 
 https://volta.sh/
 
-- Installation: `curl https://get.volta.sh | bash`
+-   Installation: `curl https://get.volta.sh | bash`
 
-- Pin node version in the project:
+-   Pin node version in the project:
 
     ```bash
     $ volta pin node@12
@@ -31,28 +67,24 @@ Create .babelrc file with and other presets & plugins:
 
 ```json
 {
-  "presets": [
-    "@babel/preset-env",
-    "@babel/preset-react"
-  ],
-  "plugins": [
-    "@babel/plugin-transform-runtime"
-  ]
+    "presets": ["@babel/preset-env", "@babel/preset-react"],
+    "plugins": ["@babel/plugin-transform-runtime"]
 }
 ```
 
 More info:
-* https://babeljs.io/docs/en/babel-preset-env
-* https://babeljs.io/docs/en/babel-preset-react
+
+-   https://babeljs.io/docs/en/babel-preset-env
+-   https://babeljs.io/docs/en/babel-preset-react
 
 > Why?
 > Transform JSX to JS.
 > More info: https://babeljs.io/docs/en/babel-plugin-transform-react-jsx
 
-* https://babeljs.io/docs/en/babel-plugin-transform-runtime
+-   https://babeljs.io/docs/en/babel-plugin-transform-runtime
 
 > Why?
-> Babel uses very small helpers for common functions such as _extend. By default this will be added to every file that requires it. This duplication is sometimes unnecessary, especially when your application is spread out over multiple files.
+> Babel uses very small helpers for common functions such as \_extend. By default this will be added to every file that requires it. This duplication is sometimes unnecessary, especially when your application is spread out over multiple files.
 >
 > This is where the @babel/plugin-transform-runtime plugin comes in: all of the helpers will reference the module @babel/runtime to avoid duplication across your compiled output. The runtime will be compiled into your build.
 
