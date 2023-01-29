@@ -2,74 +2,118 @@
 
 exports[`List should match the same snapshot 1`] = `
 <DocumentFragment>
-  <table>
-    <thead>
-      <tr>
-        <td>
-          Player
-        </td>
-        <td>
-          Team
-        </td>
-        <td>
-          Score
-        </td>
-        <td>
-          Actions
-        </td>
-      </tr>
-    </thead>
-    <tbody
-      data-testid="players"
-    />
-  </table>
+  <div
+    class="ola_table-container is-responsive"
+  >
+    <table
+      class="ola_table"
+    >
+      <thead>
+        <tr
+          class="ola_tableRow"
+        >
+          <th
+            class="ola_tableCell is-left"
+          >
+            Player
+          </th>
+          <th
+            class="ola_tableCell is-left"
+          >
+            Team
+          </th>
+          <th
+            class="ola_tableCell is-numeric"
+          >
+            Score
+          </th>
+          <th
+            class="ola_tableCell is-left"
+          >
+            Actions
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        data-testid="players"
+      />
+    </table>
+  </div>
   <br />
-  <form>
-    <h4>
+  <form
+    class="ola_ly-form"
+  >
+    <h4
+      class="ola_panel-display"
+    >
       Add new players
     </h4>
-    <label
-      for="name"
-      style="display: none;"
+    <div
+      class="ola-field"
     >
-      Player name
-    </label>
-    <input
-      id="name"
-      name="name"
-      placeholder="player name"
-    />
-    <label
-      for="team"
-      style="display: none;"
-    >
-      Team name
-    </label>
-    <input
-      id="team"
-      name="team"
-      placeholder="team name"
-    />
-    <label
-      for="score"
-      style="display: none;"
-    >
-      Team score
-    </label>
-    <input
-      id="score"
-      name="score"
-      placeholder="team score"
-    />
-    <button
-      class="ola_button is-primary"
-    >
-      <span
-        class="ola_button-text"
+      <label
+        class="ola_field-label"
+        for="name"
       >
-        Add
-      </span>
-    </button>
+        Player name
+      </label>
+      <input
+        class="ola_input"
+        id="name"
+        name="name"
+        placeholder="player name"
+        type="text"
+      />
+    </div>
+    <div
+      class="ola-field"
+    >
+      <label
+        class="ola_field-label"
+        for="team"
+      >
+        Team name
+      </label>
+      <input
+        class="ola_input"
+        id="team"
+        name="team"
+        placeholder="team name"
+        type="text"
+      />
+    </div>
+    <div
+      class="ola-field"
+    >
+      <label
+        class="ola_field-label"
+        for="score"
+      >
+        Team score
+      </label>
+      <input
+        class="ola_input"
+        id="score"
+        name="score"
+        placeholder="team score"
+        type="text"
+      />
+    </div>
+    <div>
+      <div
+        class="ola_buttonGroup"
+      >
+        <button
+          class="ola_button is-primary"
+        >
+          <span
+            class="ola_button-text"
+          >
+            Add
+          </span>
+        </button>
+      </div>
+    </div>
   </form>
 </DocumentFragment>
 `;

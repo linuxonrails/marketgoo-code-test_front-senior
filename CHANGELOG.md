@@ -151,7 +151,7 @@ To execute cypress locally (open the cypress UI):
 npm run cypress:open
 ```
 
-Cypress for CI (headless mode):
+To run Cypress for CI (headless mode):
 
 ```bash
 npm run cypress:run
