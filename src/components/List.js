@@ -1,5 +1,5 @@
 import React from "react";
-import axios, { CanceledError } from "axios";
+import axios from "axios";
 import { Button } from "@marketgoo/ola";
 
 class List extends React.Component {
