@@ -1,5 +1,5 @@
 import React from "react";
-import axios from "axios";
+import axios, { CanceledError } from "axios";
 import { Button } from "@marketgoo/ola";
 
 class List extends React.Component {
@@ -14,12 +14,27 @@ class List extends React.Component {
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleDelete = this.handleDelete.bind(this);
+        // Create an AbortController to cancel API requests:
+        this.controller = new AbortController();
     }
 
     componentDidMount() {
-        axios.get("/players").then((response) => {
-            this.setState({ data: response.data });
-        });
+        axios
+            .get("/players", { signal: this.controller.signal })
+            .then((response) => {
+                this.setState({ data: response.data });
+            })
+            .catch((err) => {
+                if (err.name == "CanceledError") {
+                    // Canceled API request: do nothing
+                } else {
+                    throw err;
+                }
+            });
+    }
+
+    componentWillUnmount() {
+        this.controller.abort();
     }
 
     handleChange(event) {
