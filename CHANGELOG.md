@@ -18,7 +18,7 @@
 -   [x] Pine Node version with Volta
 -   [ ] Add TypeDoc to document code
 -   [ ] Redux + sagas
--   [ ] Use Ola DS
+-   [x] Use Ola DS
 -   [x] Eslint
 -   [ ] Migration to TypeScript
 -   [ ] Add typings

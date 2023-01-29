@@ -5,16 +5,7 @@ const ENDPOINT = "http://localhost:3000";
 // import "./index.css";
 import "../node_modules/@marketgoo/ola/dist/index.css";
 
-import List from "./components/List";
-
-const Root = () => {
-    return (
-        <>
-            <h1>League Champion</h1>
-            <List />
-        </>
-    );
-};
+import { Root } from "./components/Root";
 
 const container = document.getElementById("app");
 ReactDOM.render(<Root />, container);

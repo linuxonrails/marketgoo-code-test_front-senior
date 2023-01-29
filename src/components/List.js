@@ -1,13 +1,7 @@
 import React from "react";
 import axios from "axios";
-import {
-    Button,
-    ButtonGroup,
-    Input,
-    Table,
-    TableRow,
-    TableCell,
-} from "@marketgoo/ola";
+import { PlayerTable } from "./PlayerTable";
+import { FormAddNewPlayers } from "./FormAddNewPlayers";
 
 class List extends React.Component {
     constructor(props) {
@@ -71,83 +65,15 @@ class List extends React.Component {
 
         return (
             <>
-                <Table responsive>
-                    <thead>
-                        <TableRow>
-                            <TableCell header>Player</TableCell>
-                            <TableCell header>Team</TableCell>
-                            <TableCell header variant="numeric">
-                                Score
-                            </TableCell>
-                            <TableCell header>Actions</TableCell>
-                        </TableRow>
-                    </thead>
-                    <tbody data-testid="players">
-                        {players &&
-                            players.data.map((x) => (
-                                <TableRow key={x.id} data-testid="player">
-                                    <TableCell>{x.name}</TableCell>
-                                    <TableCell>{x.team}</TableCell>
-                                    <TableCell variant="numeric">
-                                        {x.score}
-                                    </TableCell>
-                                    <TableCell>
-                                        <Button
-                                            size="small"
-                                            variant="destructive"
-                                            onClick={() =>
-                                                this.handleDelete(x.id)
-                                            }
-                                        >
-                                            Remove
-                                        </Button>
-                                    </TableCell>
-                                </TableRow>
-                            ))}
-                    </tbody>
-                </Table>
+                <PlayerTable
+                    players={players}
+                    handleDelete={this.handleDelete}
+                />
                 <br />
-                <form onSubmit={this.handleSubmit} className="ola_ly-form">
-                    <h4 className="ola_panel-display">Add new players</h4>
-                    <div className="ola-field">
-                        <label htmlFor="name" className="ola_field-label">
-                            Player name
-                        </label>
-                        <Input
-                            id="name"
-                            name="name"
-                            placeholder="player name"
-                            onChange={this.handleChange}
-                        ></Input>
-                    </div>
-                    <div className="ola-field">
-                        <label htmlFor="team" className="ola_field-label">
-                            Team name
-                        </label>
-                        <Input
-                            id="team"
-                            name="team"
-                            placeholder="team name"
-                            onChange={this.handleChange}
-                        ></Input>
-                    </div>
-                    <div className="ola-field">
-                        <label htmlFor="score" className="ola_field-label">
-                            Team score
-                        </label>
-                        <Input
-                            id="score"
-                            name="score"
-                            placeholder="team score"
-                            onChange={this.handleChange}
-                        ></Input>
-                    </div>
-                    <div>
-                        <ButtonGroup>
-                            <Button variant="primary">Add</Button>
-                        </ButtonGroup>
-                    </div>
-                </form>
+                <FormAddNewPlayers
+                    handleChange={this.handleChange}
+                    handleSubmit={this.handleSubmit}
+                />
             </>
         );
     }
