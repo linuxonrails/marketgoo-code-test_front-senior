@@ -182,3 +182,27 @@ There are other options. I use prettier (for now) because it's simple and (almos
 ```bash
 npm i @marketgoo/ola
 ```
+
+## Migration to TypeScript
+
+> Webpack integration is pretty simple. We are using `ts-loader`, a TypeScript loader, combined with source-map-loader for easier debugging.
+
+https://www.typescriptlang.org/docs/handbook/migrating-from-javascript.html#handbook-content
+
+Simply run:
+
+```bash
+npm install --save-dev typescript ts-loader
+```
+
+And add some changes to the webpack.config.js.
+
+Update webpack, webpack-cli, plugins, etc.
+
+Install types for Jest:
+
+> ts-jest major version must match jest major version
+
+```bash
+npm i -D ts-jest@26.4.4 @types/jest
+```

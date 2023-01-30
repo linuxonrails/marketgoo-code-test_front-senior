@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "allowSyntheticDefaultImports": true,
+        "noImplicitAny": false,
+        "module": "es6",
+        "target": "es5",
+        "jsx": "react",
+        "allowJs": true,
+        "moduleResolution": "node",
+        "types": ["node", "jest", "@testing-library/jest-dom"]
+    },
+    "exclude": ["**/*.spec.tsx", "**/*.spec.ts"]
+}

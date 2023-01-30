@@ -14,8 +14,8 @@ export const PlayerTable = (props) => (
             </TableRow>
         </thead>
         <tbody data-testid="players">
-            {props.players &&
-                props.players.data.map((x) => (
+            {props.players !== null &&
+                props.players.map((x) => (
                     <TableRow key={x.id} data-testid="player">
                         <TableCell>{x.name}</TableCell>
                         <TableCell>{x.team}</TableCell>
